@@ -2,6 +2,7 @@
   "extras": [
     "lazyvim.plugins.extras.ai.codeium",
     "lazyvim.plugins.extras.ai.copilot-chat",
+    "lazyvim.plugins.extras.editor.overseer",
     "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.clangd",
