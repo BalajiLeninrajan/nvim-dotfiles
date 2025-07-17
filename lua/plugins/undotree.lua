@@ -4,7 +4,7 @@ return {
     cmd = "UndotreeToggle", -- Load on demand when you use the command
     config = function()
       -- Optional: Configure persistent undo
-      if has("persistent_undo") then
+      if vim.fn.has("persistent_undo") == 1 then
         local undodir = vim.fn.expand("~/.local/share/nvim/undodir")
         vim.fn.mkdir(undodir, "p")
         vim.opt.undodir = undodir
@@ -12,7 +12,7 @@ return {
       end
     end,
     keys = {
-      { "<leader>u", "<cmd>UndotreeToggle<CR>", desc = "Toggle Undo Tree" },
+      { "<leader>z", "<cmd>UndotreeToggle<CR>", desc = "Toggle Undo Tree" },
     },
   },
 }
