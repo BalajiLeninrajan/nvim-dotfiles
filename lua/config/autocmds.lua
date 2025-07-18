@@ -9,5 +9,5 @@
 
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = "*.puml",
-  command = "silent! !java -jar ~/.local/bin/plantuml.jar %",
+  command = "silent! !plantuml -tsvg %",
 })
